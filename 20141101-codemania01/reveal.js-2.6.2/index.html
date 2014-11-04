@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>How to survive and have fun without for loop</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Nuttanart Pornprasitsakul">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>How to survive and have fun without for loop</h2>
+				</section>
+
+				<section>
+					<h2>I can't remember when was the last time I write for loop on my work</h2>
+				</section>
+
+				<section>
+					<h2>I mean this for loop</h2>
+					<pre><code data-trim class="java">
+for (int i = 0; i < array.length; i++) {
+	...
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h1>How?</h1>
+				</section>
+
+				<section>
+					<h2>Let use while loop!</h2>
+					<pre><code data-trim class="java">
+int i = 0;
+while (i < array.length) {
+	...
+	i++;
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h1>Thank you!</h1>
+				</section>
+
+				<section>
+					<h1>No...</h1>
+				</section>
+
+				<section>
+					<h2>Recursive?</h2>
+					<pre><code data-trim class="java">
+void recurseMe(int i) {
+	if (i < array.length) {
+		...
+		return recurseMe(i++);
+	}
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>That works, but not so fun...</h2>
+				</section>
+
+				<section>
+					<p>Nuttanart Pornprasitsakul</p>
+					<p>(Tap)</p>
+					<p>@visibletrap</p>
+					<p>2 years with Java</p>
+					<p>3 years with Ruby and little bit of Javascript</p>
+				</section>
+
+				<section>
+					<h2>Please interrupt me</h2>
+				</section>
+
+				<section>
+				<section>
+					<h2>What's your most familiar language?</h2>
+				</section>
+
+				<section>
+					<h1>Java?</h1>
+				</section>
+
+				<section>
+					<h1>C#?</h1>
+				</section>
+
+				<section>
+					<h1>C++?</h1>
+				</section>
+
+				<section>
+					<h1>C?</h1>
+				</section>
+
+				<section>
+					<h1>PHP?</h1>
+				</section>
+
+				<section>
+					<h1>Javascript?</h1>
+				</section>
+
+				<section>
+					<h1>Objective-C?</h1>
+				</section>
+
+				<section>
+					<h1>Others?</h1>
+				</section>
+				</section>
+
+				<section>
+					<h2>I'd like to invite you to try</h2>
+				</section>
+
+				<section>
+					<h2>Replacing your for loop with <br>
+						Higher-order function</h2>
+					<p>~ Lambda, Closure<p>
+				</section>
+
+				<section>
+					<h2>Definition</h2>
+					<p>
+					From Wikipedia:
+					</p>
+					<blockquote cite="http://en.wikipedia.org/wiki/Higher-order_function">
+						a higher-order function is a function that does at least one of the following:
+						<ul>
+							<li>takes one or more functions as an input</li>
+							<li>outputs a function</li>
+						</ul>
+					</blockquote>
+				</section>
+
+				<section>
+					<h1>In action</h1>
+				</section>
+
+				<section>
+				<section>
+					<h2>Video Api</h2>
+					<pre><code data-trim class="javascript">
+var videos = [
+	{
+		id: 'BE8-8f6lxWo',
+		likeCount: 100,
+		dislikeCount: 10
+	},
+	{
+		id: 'aJjYLc1gjTE',
+		likeCount: 300,
+		dislikeCount: 50
+	}
+];
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>like - dislike</h2>
+					<pre><code data-trim class="javascript">
+var likeDiffVideos = [];
+for (var i = 0; i < videos.length; i++) {
+	var videoWithDiff = {
+		id: videos[i].id,
+		likeCount: videos[i].likeCount,
+		dislikeCount: videos[i].dislikeCount,
+		diffCount: videos[i].likeCount - videos[i].dislikeCount
+	};
+	likeDiffVideos.push(videoWithDiff);
+}
+console.log(likeDiffVideos);
+					</code></pre>
+					<br>
+					<pre><code data-trim class="javascript">
+var videos = [
+	{
+		id: 'BE8-8f6lxWo',
+		likeCount: 100,
+		dislikeCount: 10
+	},
+	{
+		id: 'aJjYLc1gjTE',
+		likeCount: 300,
+		dislikeCount: 50
+	}
+];
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Result</h2>
+					<pre><code data-trim class="javascript">
+[ { id: 'BE8-8f6lxWo',
+	likeCount: 100,
+	dislikeCount: 10,
+	diffCount: 90 },
+  { id: 'aJjYLc1gjTE',
+	likeCount: 300,
+	dislikeCount: 50,
+	diffCount: 250 } ]
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Map</h2>
+					<pre><code data-trim class="javascript">
+var likeDiffVideos = videos.map(function(video) {
+	return {
+		id: video.id,
+		likeCount: video.likeCount,
+		dislikeCount: video.dislikeCount,
+		diffCount: video.likeCount - video.dislikeCount
+	};
+});
+console.log(likeDiffVideos);
+					</code></pre>
+					<br>
+					<pre><code data-trim class="javascript">
+var videos = [
+	{
+		id: 'BE8-8f6lxWo',
+		likeCount: 100,
+		dislikeCount: 10
+	},
+	{
+		id: 'aJjYLc1gjTE',
+		likeCount: 300,
+		dislikeCount: 50
+	}
+];
+					</code></pre>
+				</section>
+				</section>
+
+				<section>
+				<section>
+					<h2>Video Api</h2>
+					<pre><code data-trim class="javascript">
+var videos = [
+	{
+		id: 'BE8-8f6lxWo',
+		publishedAt: '2014-10-01T22:45:24.000Z'
+	},
+	{
+		id: 'aJjYLc1gjTE',
+		publishedAt: '2014-09-06T02:35:12.000Z'
+	}
+];
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>published At ></h2>
+					<pre><code data-trim class="javascript">
+var thisMonthVideos = [];
+for (var i = 0; i < videos.length; i++) {
+	if (videos[i].publishedAt > '2014-10-01T00:00:00.000Z') {
+		thisMonthVideos.push(videos[i]);
+	}
+}
+console.log(thisMonthVideos);
+					</code></pre>
+					<br>
+					<pre><code data-trim class="javascript">
+var videos = [
+	{
+		id: 'BE8-8f6lxWo',
+		publishedAt: '2014-10-01T22:45:24.000Z'
+	},
+	{
+		id: 'aJjYLc1gjTE',
+		publishedAt: '2014-09-06T02:35:12.000Z'
+	}
+];
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Result</h2>
+					<pre><code data-trim class="javascript">
+[ { id: 'BE8-8f6lxWo', publishedAt: '2014-10-01T22:45:24.000Z' } ]
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Filter</h2>
+					<pre><code data-trim class="javascript">
+var thisMonthVideos = videos.filter(function(video) {
+	return video.publishedAt > '2014-10-01T00:00:00.000Z';
+});
+console.log(thisMonthVideos);
+					</code></pre>
+					<br>
+					<pre><code data-trim class="javascript">
+var videos = [
+	{
+		id: 'BE8-8f6lxWo',
+		publishedAt: '2014-10-01T22:45:24.000Z'
+	},
+	{
+		id: 'aJjYLc1gjTE',
+		publishedAt: '2014-09-06T02:35:12.000Z'
+	}
+];
+					</code></pre>
+				</section>
+				</section>
+
+				<section>
+				<section>
+					<h2>Video Api</h2>
+					<pre><code data-trim class="javascript">
+var videos = [
+	{
+		id: 'BE8-8f6lxWo',
+		diffCount: 90
+	},
+	{
+		id: 'aJjYLc1gjTE',
+		diffCount: 250
+	}
+];
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Sum like diffs</h2>
+					<pre><code data-trim class="javascript">
+var sumDiff = 0;
+for (var i = 0; i < videos.length; i++) {
+	sumDiff += videos[i].diffCount;
+}
+console.log(sumDiff);
+					</code></pre>
+					<br>
+					<pre><code data-trim class="javascript">
+var videos = [
+	{
+		id: 'BE8-8f6lxWo',
+		diffCount: 90
+	},
+	{
+		id: 'aJjYLc1gjTE',
+		diffCount: 250
+	}
+];
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Result</h2>
+					<pre><code data-trim class="javascript">
+340
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Reduce</h2>
+					<pre><code data-trim class="javascript">
+var sumDiff = videos.reduce(function(immediateResult, video) {
+	return immediateResult + video.diffCount;
+}, 0);
+console.log(sumDiff);
+					</code></pre>
+					<br>
+					<pre><code data-trim class="javascript">
+var videos = [
+	{
+		id: 'BE8-8f6lxWo',
+		diffCount: 90
+	},
+	{
+		id: 'aJjYLc1gjTE',
+		diffCount: 250
+	}
+];
+					</code></pre>
+				</section>
+				</section>
+
+				<section>
+				<section>
+					<h2>Put them all together</h2>
+					<pre><code data-trim class="javascript">
+var videos = [
+	{
+		id: 'BE8-8f6lxWo',
+		publishedAt: '2014-10-01T22:45:24.000Z',
+		likeCount: 100,
+	   	dislikeCount: 10
+	},
+	{
+		id: 'aJjYLc1gjTE',
+		publishedAt: '2014-09-06T02:35:12.000Z',
+		likeCount: 300,
+		dislikeCount: 50
+	}
+];
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code data-trim class="javascript">
+var sumDiff = 0;
+for (var i = 0; i < videos.length; i++) {
+	if (videos[i].publishedAt > '2014-10-01T00:00:00.000Z') {
+	   sumDiff += videos[i].likeCount - videos[i].dislikeCount;
+	}
+}
+console.log(sumDiff);
+					</code></pre>
+					<br>
+					<pre><code data-trim class="javascript">
+var sumDiff = videos.filter(function(video) {
+	return video.publishedAt > '2014-10-01T00:00:00.000Z';
+}).map(function(video) {
+	return { diffCount: video.likeCount - video.dislikeCount };
+}).reduce(function(immediateResult, video) {
+	return immediateResult + video.diffCount;
+}, 0);
+console.log(sumDiff);
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code data-trim class="javascript">
+var sumDiff = 0;
+for (var i = 0; i < videos.length; i++) {
+	if (videos[i].publishedAt > '2014-10-01T00:00:00.000Z') {
+	   sumDiff += videos[i].likeCount - videos[i].dislikeCount;
+	}
+}
+console.log(sumDiff);
+					</code></pre>
+					<br>
+					<pre><code data-trim class="javascript">
+var fromLastMonth = function(video) {
+	return video.publishedAt > '2014-10-01T00:00:00.000Z';
+};
+var calDiffCount = function(video) {
+	return { diffCount: video.likeCount - video.dislikeCount };
+};
+var sumDiffCount = function(result, video) {
+	return result + video.diffCount;
+};
+var sumDiff = videos.filter(fromLastMonth)
+		.map(calDiffCount)
+		.reduce(sumDiffCount,0);
+console.log(sumDiff);
+					</code></pre>
+				</section>
+				</section>
+
+				<section>
+				<section>
+					<h2>Basic internal implementation</h2>
+				</section>
+
+				<section>
+					<h2>For loop!</h2>
+					<pre><code data-trim class="javascript">
+function mapper1(coll, f) {
+	var newColl = [];
+	for (var i = 0; i < coll.length; i++) {
+		newColl[i] = f(coll[i]);
+	}
+	return newColl;
+}
+					</code></pre>
+					<pre><code data-trim class="javascript">
+var numbers = [1, 2, 3, 4, 5]; 
+var increment = function(i) {
+	return i + 1;
+};
+var incrementedNumbers1 = mapper1(numbers, increment);
+console.log(incrementedNumbers1);
+// => [ 2, 3, 4, 5, 6 ]
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Recursive</h2>
+					<pre><code data-trim class="javascript">
+function mapper2(coll, f) {
+	if (coll.length === 0) {
+		return [];
+	} else {
+		var head = coll[0];
+		var tail = coll.slice(1,coll.length);
+		return [f(head)].concat(mapper2(tail,f));
+	}
+}
+					</code></pre>
+					<pre><code data-trim class="javascript">
+var numbers = [1, 2, 3, 4, 5]; 
+var increment = function(i) {
+	return i + 1;
+};
+var incrementedNumbers2 = mapper2(numbers, increment);
+console.log(incrementedNumbers2);
+// => [ 2, 3, 4, 5, 6 ]
+					</code></pre>
+				</section>
+				</section>
+
+				<section>
+				<section>
+					<h1>Pros</h1>
+				</section>
+
+				<section>
+					<h2>Avoid boring, duplicated for loop</h2>
+					<pre><code data-trim class="java">
+for (int i = 0; i < array.length; i++) {
+	...
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Composibility</h2>
+					<pre><code data-trim class="javascript">
+var sumDiff = 0;
+for (var i = 0; i < videos.length; i++) {
+	if (videos[i].publishedAt > '2014-10-01T00:00:00.000Z') {
+	   sumDiff += videos[i].likeCount - videos[i].dislikeCount;
+	}
+}
+console.log(sumDiff);
+					</code></pre>
+					<br>
+					<pre><code data-trim class="javascript">
+var fromLastMonth = function(video) {
+	return video.publishedAt > '2014-10-01T00:00:00.000Z';
+};
+var calDiffCount = function(video) {
+	return { diffCount: video.likeCount - video.dislikeCount };
+};
+var sumDiffCount = function(result, video) {
+	return result + video.diffCount;
+};
+var sumDiff = videos.filter(fromLastMonth)
+		.map(calDiffCount)
+		.reduce(sumDiffCount,0);
+console.log(sumDiff);
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code data-trim class="javascript">
+var sumDiff = 0;
+for (var i = 0; i < videos.length; i++) {
+	if (videos[i].publishedAt > '2014-10-01T00:00:00.000Z' &&
+		videos[i].publishedAt < '2014-11-01T00:00:00.000Z') {
+	   sumDiff += videos[i].likeCount - videos[i].dislikeCount;
+	}
+}
+console.log(sumDiff);
+					</code></pre>
+					<br>
+					<pre><code data-trim class="javascript">
+var fromLastMonth = function(video) {
+	return video.publishedAt > '2014-10-01T00:00:00.000Z';
+};
+var beforeThisMonth = function(video) {
+	return videos[i].publishedAt < '2014-11-01T00:00:00.000Z';
+};
+var calDiffCount = function(video) {
+	return { diffCount: video.likeCount - video.dislikeCount };
+};
+var sumDiffCount = function(result, video) {
+	return result + video.diffCount;
+};
+var sumDiff = videos.filter(fromLastMonth)
+		.filter(beforeThisMonth)
+		.map(calDiffCount)
+		.reduce(sumDiffCount,0);
+console.log(sumDiff);
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Parallelism</h2>
+					<p>Required isolation in each function</p>
+					<p>E.g. MapReduce</p>
+				</section>
+				</section>
+
+				<section>
+					<h1>Cons</h1>
+					<ul>
+						<li>Not as fast</li>
+						<li>Familiarity</li>
+					</ul>
+				</section>
+
+				<section>
+				<section>
+					<h1>More fun</h1>
+				</section>
+
+				<section>
+					<h2>Martin Fowler's Collection pipeline</h2>
+				</section>
+
+				<section>
+					<img src="resources/collection-pipeline1.png"/>
+				</section>
+
+				<section>
+					<img src="resources/collection-pipeline2.png"/>
+				</section>
+
+				<section>
+					<img src="resources/collection-pipeline3.png"/>
+				</section>
+
+				<section>
+					<img src="resources/collection-pipeline4.png"/>
+				</section>
+
+				<section>
+					<h2>Check your favorite language <br>documentation or library</h2>
+				</section>
+				</section>
+
+				<section>
+				<section>
+					<h2>Replicate a Sequence</h2>
+					<img src="resources/example1.png"/>
+				</section>
+
+				<section>
+					<h2>Little bit of Clojure</h2>
+					<pre><code data-trim class="javascript">
+functionName(arg1, args2, ...)
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(function-name arg1 args2 ...)
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Replicate a Sequence</h2>
+					<img src="resources/example1.png"/>
+				</section>
+
+				<section>
+					<img src="resources/example1.png"/>
+					<pre><code data-trim class="javascript">
+function(seq, n) {
+	var result = [];
+	for (var i = 0; i < seq.length; i++) {
+		for (var j = 0; j < n; j++) {
+			result.push(seq[i]);
+		}
+	}
+	return result;
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code data-trim class="clojure">
+(fn [seqn n] (mapcat (partial repeat n) seqn))
+					</code></pre>
+					<pre><code data-trim class="javascript">
+function(seq, n) {
+	var result = [];
+	for (var i = 0; i < seq.length; i++) {
+		for (var j = 0; j < n; j++) {
+			result.push(seq[i]);
+		}
+	}
+	return result;
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code data-trim class="clojure">
+(fn [seqn n] (mapcat (partial repeat n) seqn))
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(mapcat function collection)
+;; collection.mapcat(function)
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(repeat 5 "x")
+;=> ("x" "x" "x" "x" "x")
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(partial repeat 2)
+;=> #&lt;core$partial$fn__4228 clojure.core$partial$fn__4228@79c853cf>
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(map (partial repeat 2) [1 2 3])
+;=> ((1 1) (2 2) (3 3))
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(mapcat (partial repeat 2) [1 2 3])
+;=> (1 1 2 2 3 3)
+					</code></pre>
+				</section>
+
+				<section>
+					<img src="resources/example1.png"/>
+					<pre><code data-trim class="clojure">
+(mapcat (partial repeat 4) [:a :b])
+;=> (:a :a :a :a :b :b :b :b)
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Drop Every Nth Item</h2>
+					<img src="resources/example2.png"/>
+				</section>
+
+				<section>
+					<pre><code data-trim class="javascript">
+function(coll, n) {
+	var result = [];
+	for (var i = 0; i < coll.length; i++) {
+		if ((i+1) % 3 !== 0) {
+			result.push(coll[i]);
+		}
+	}
+	return result;
+}
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(fn [coll n] (mapcat (partial take (dec n)) (partition-all n coll)))
+					</code></pre>
+				</section>
+
+				<section>
+					<pre><code data-trim class="clojure">
+(fn [coll n] (mapcat (partial take (dec n)) (partition-all n coll)))
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(dec 3)
+;=> 2
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(take 2 [1 2 3])
+;=> (1 2)
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(partition-all 3 [1 2 3 4 5 6 7 8])
+;=> ((1 2 3) (4 5 6) (7 8))
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(mapcat (partial take (dec 3)) (partition-all 3 [1 2 3 4 5 6 7 8]))
+;=> (1 2 4 5 7 8)
+					</code></pre>
+				</section>
+
+				<section>
+					<img src="resources/example2.png"/>
+					<pre><code data-trim class="clojure">
+(mapcat (partial take (dec 2)) (partition-all 2 [:a :b :c :d :e :f]))
+;=> (:a :c :e)
+					</code></pre>
+					<pre><code data-trim class="clojure">
+(->> [:a :b :c :d :e :f]
+     (partition-all 2)
+     (mapcat (partial take (dec 2))))
+					</code></pre>
+				</section>
+				</section>
+
+				<section>
+					<h1>Fun?</h1>
+				</section>
+
+				<section>
+					<h1>As a coder, We need to have Fun</h1>
+				</section>
+
+				<section>
+					<h1>Happy coding!</h1>
+				</section>
+
+				<section>
+					<h1>Thank you!</h1>
+				</section>
+
+				<section>
+					<h2>Credits</h2>
+					<p>Wikipedia: Higher-order function: http://en.wikipedia.org/wiki/Higher-order_function</p>
+					<p>Martin Fowler: Collection Pipeline: http://martinfowler.com/articles/collection-pipeline</p>
+					<p>Replicate a Sequence: https://www.4clojure.com/problem/33</p>
+					<p>Drop Every Nth Item: https://www.4clojure.com/problem/41</p>
+				</section>
+
+				<section>
+					<h1>Q/A</h1>
+					<p>Nuttanart Pornprasitsakul</p>
+					<p>@visibletrap</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				//  sky,beige,simple,serif,night,moon,solarized
+				//theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+					theme: 'moon',
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
