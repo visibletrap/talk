@@ -1,0 +1,16 @@
+เกริ่นข้อดี
+concurrency
+java interop (seesaw/swing)
+concise
+dsl (build your own language) (clara, core.async)
+pragmatic
+persistent data structure
+collection library (data management)
+fast feedback with REPL
+
+
+พูดถึง 
+Pure function สำคัญอย่างไร (pmap ...)
+ไม่ปวดหัวเรื่อง type เข้าใจง่าย
+
+threading macro
