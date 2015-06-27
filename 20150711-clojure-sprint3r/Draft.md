@@ -5,10 +5,10 @@
 
 
 * Setup REPL
-  * Cursive
   * [REPL](https://github.com/cognitect/clojure-lab/blob/master/src/cljlab/syntax.clj#L192)
     * (doc)
     * [*1, *2](https://github.com/cognitect/clojure-lab/blob/master/src/cljlab/syntax.clj#L204)
+  * Cursive
 * LISP
   * (println)
 * Paredit
