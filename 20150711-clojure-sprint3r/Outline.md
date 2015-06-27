@@ -1,6 +1,8 @@
 # Clojure Training Outline
 1. [Clojure By Example](http://kimh.github.io/clojure-by-example/)
 2. [Cognitect Clojure Lab](https://github.com/cognitect/clojure-lab)
+3. [CLOJURE for the BRAVE and TRUE](http://www.braveclojure.com)
+
 
 * Setup REPL
   * Cursive
@@ -17,8 +19,10 @@
     * #()
       * [%1, %2, %&](https://github.com/cognitect/clojure-lab/blob/master/src/cljlab/functions.clj#L170)
 * [Let](http://kimh.github.io/clojure-by-example/#let)
+  * show macro
 * [apply](https://github.com/cognitect/clojure-lab/blob/b8fe8b7005e3491d392480961a7f1844a3490373/src/cljlab/functions.clj#L217-L220)
 * If
+  * do
 * Boolean (Truthy)
 * Collections
 * [Standard libs](http://kimh.github.io/clojure-by-example/#lists)
@@ -29,9 +33,10 @@
   * Promise
   * Atom
   * Agent
-* [Java Interop](https://github.com/cognitect/clojure-lab/blob/b8fe8b7005e3491d392480961a7f1844a3490373/src/cljlab/functions.clj#L310-L316)
+* [Java Interop](https://github.com/cognitect/clojure-lab/blob/b8fe8b7005e3491d392480961a7f1844a3490373/src/cljlab/functions.clj#L310-L316),[2](http://www.braveclojure.com/java/#3_2__Creating_and_Mutating_Instances)
+    * gen uuid
 * [recur](https://github.com/cognitect/clojure-lab/blob/b8fe8b7005e3491d392480961a7f1844a3490373/src/cljlab/flowcontrol.clj#L270)
-* core.async
+* [core.async](http://www.braveclojure.com/core-async/)
 * [Advance standard libs](https://github.com/cognitect/clojure-lab/blob/b8fe8b7005e3491d392480961a7f1844a3490373/src/cljlab/sequences.clj)
 
 
