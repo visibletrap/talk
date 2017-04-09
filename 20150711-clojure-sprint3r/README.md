@@ -1,3 +1,5 @@
+[Companion source code is here](https://github.com/visibletrap/basic-clojure-sprint3r)
+
 * [Eventbrite](http://www.eventbrite.com/e/basic-clojure-programming-tickets-17284933702)
 
 ## Setup
