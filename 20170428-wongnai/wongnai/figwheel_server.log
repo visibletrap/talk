@@ -1,0 +1,509 @@
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.39 seconds.[0m
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.403 seconds.[0m
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.244 seconds.[0m
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.251 seconds.[0m
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.243 seconds.[0m
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 1.011 seconds.[0m
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.323 seconds.[0m
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.198 seconds.[0m
+[36m----  Couldn't load Clojure file  src/wongnai/web.clj   line:7  column:1  ----[0m
+
+  [1mToo many arguments to def[0m
+
+  [36m5[0m  [36m            [compojure.core :refer [GET]]))[0m
+  [36m6[0m  [36m[0m
+  [33m7[0m  [1m(def handler[0m
+  [0m [0m  [33m^--- Too many arguments to def[0m
+  [36m8[0m  [36m  (GET "/myweb" [] (response {:x 1}))[0m
+  [36m9[0m  [36m  (GET "/with-param/:p" [p] (response {:p p})))[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.RuntimeException: Too many arguments to def
+ at clojure.lang.Util.runtimeException (Util.java:221)
+    clojure.lang.Compiler$DefExpr$Parser.parse (Compiler.java:532)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6919)
+    clojure.lang.Compiler.analyze (Compiler.java:6701)
+    clojure.lang.Compiler.analyze (Compiler.java:6657)
+    clojure.lang.Compiler.eval (Compiler.java:6982)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28311.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28344.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28397.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28438.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9424$fn__9425.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9424.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/wongnai/web.clj   line:7  column:1  ----[0m
+
+  [1mToo many arguments to def[0m
+
+  [36m 5[0m  [36m            [compojure.core :refer [GET]]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(def handler[0m
+  [0m  [0m  [33m^--- Too many arguments to def[0m
+  [36m 8[0m  [36m  [0m
+  [36m 9[0m  [36m  (GET "/myweb" [] (response {:x 1}))[0m
+  [36m10[0m  [36m  (GET "/with-param/:p" [p] (response {:p p})))[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.RuntimeException: Too many arguments to def
+ at clojure.lang.Util.runtimeException (Util.java:221)
+    clojure.lang.Compiler$DefExpr$Parser.parse (Compiler.java:532)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6919)
+    clojure.lang.Compiler.analyze (Compiler.java:6701)
+    clojure.lang.Compiler.analyze (Compiler.java:6657)
+    clojure.lang.Compiler.eval (Compiler.java:6982)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28311.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28344.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28397.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28438.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9424$fn__9425.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9424.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[36m----  Couldn't load Clojure file  src/wongnai/web.clj   line:7  column:1  ----[0m
+
+  [1mUnable to resolve symbol: defroutes in this context[0m
+
+  [36m 5[0m  [36m            [compojure.core :refer [GET]]))[0m
+  [36m 6[0m  [36m[0m
+  [33m 7[0m  [1m(defroutes handler[0m
+  [0m  [0m  [33m^--- Unable to resolve symbol: defroutes in this context[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m  (GET "/myweb" [] (response {:x 1}))[0m
+  [36m10[0m  [36m  (GET "/with-param/:p" [p] (response {:p p})))[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.RuntimeException: Unable to resolve symbol: defroutes in this context
+ at clojure.lang.Util.runtimeException (Util.java:221)
+    clojure.lang.Compiler.resolveIn (Compiler.java:7215)
+    clojure.lang.Compiler.resolve (Compiler.java:7159)
+    clojure.lang.Compiler.analyzeSymbol (Compiler.java:7120)
+    clojure.lang.Compiler.analyze (Compiler.java:6680)
+    clojure.lang.Compiler.analyze (Compiler.java:6657)
+    clojure.lang.Compiler$InvokeExpr.parse (Compiler.java:3767)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6921)
+    clojure.lang.Compiler.analyze (Compiler.java:6701)
+    clojure.lang.Compiler.analyze (Compiler.java:6657)
+    clojure.lang.Compiler.eval (Compiler.java:6982)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28311.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28344.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28397.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28438.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9424$fn__9425.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9424.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.445 seconds.[0m
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.37 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
+Hello, Wongnai
+Greater than
+"Elapsed time: 0.033427 msecs"
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.462 seconds.[0m
+Notifying browser that CSS file changed: resources/public/css/style.css
+Notifying browser that CSS file changed: resources/public/css/style.css
+Hello, Wongnai
+Greater than
+"Elapsed time: 0.042043 msecs"
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.359 seconds.[0m
+Hello, Wongnai
+[36m----  Couldn't load Clojure file  src/wongnai/core.clj   line:15  column:1  ----[0m
+
+  [1mjava.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+
+  [33m15[0m  [1m(java.util.Collections/binarySearch (map-indexed vector (range 0 100 2)) 56)[0m
+  [0m  [0m  [33m^--- java.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(java.util.UUID/randomUUID)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.ClassCastException: java.lang.Long cannot be cast to clojure.lang.IPersistentVector
+ at clojure.lang.APersistentVector.compareTo (APersistentVector.java:430)
+    java.util.Collections.indexedBinarySearch (Collections.java:226)
+    java.util.Collections.binarySearch (Collections.java:213)
+    wongnai.core$eval32311.invokeStatic (core.clj:15)
+    wongnai.core$eval32311.invoke (core.clj:15)
+    clojure.lang.Compiler.eval (Compiler.java:6978)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28317.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28350.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28403.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28444.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9430$fn__9431.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9430.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Hello, Wongnai
+[36m----  Couldn't load Clojure file  src/wongnai/core.clj   line:15  column:1  ----[0m
+
+  [1mjava.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+
+  [33m15[0m  [1m(java.util.Collections/binarySearch (map-indexed vector (range 0 100 2)) 56)[0m
+  [0m  [0m  [33m^--- java.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(java.util.UUID/randomUUID)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.ClassCastException: java.lang.Long cannot be cast to clojure.lang.IPersistentVector
+ at clojure.lang.APersistentVector.compareTo (APersistentVector.java:430)
+    java.util.Collections.indexedBinarySearch (Collections.java:226)
+    java.util.Collections.binarySearch (Collections.java:213)
+    wongnai.core$eval32328.invokeStatic (core.clj:15)
+    wongnai.core$eval32328.invoke (core.clj:15)
+    clojure.lang.Compiler.eval (Compiler.java:6978)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28317.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28350.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28403.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28444.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9430$fn__9431.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9430.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Hello, Wongnai
+[36m----  Couldn't load Clojure file  src/wongnai/core.clj   line:15  column:1  ----[0m
+
+  [1mjava.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+
+  [33m15[0m  [1m(java.util.Collections/binarySearch (map-indexed vector (range 0 100 2)) 56)[0m
+  [0m  [0m  [33m^--- java.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(java.util.UUID/randomUUID)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.ClassCastException: java.lang.Long cannot be cast to clojure.lang.IPersistentVector
+ at clojure.lang.APersistentVector.compareTo (APersistentVector.java:430)
+    java.util.Collections.indexedBinarySearch (Collections.java:226)
+    java.util.Collections.binarySearch (Collections.java:213)
+    wongnai.core$eval32345.invokeStatic (core.clj:15)
+    wongnai.core$eval32345.invoke (core.clj:15)
+    clojure.lang.Compiler.eval (Compiler.java:6978)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28317.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28350.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28403.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28444.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9430$fn__9431.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9430.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Hello, Wongnai
+[36m----  Couldn't load Clojure file  src/wongnai/core.clj   line:15  column:1  ----[0m
+
+  [1mjava.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+
+  [33m15[0m  [1m(java.util.Collections/binarySearch (map-indexed vector (range 0 100 2)) 56)[0m
+  [0m  [0m  [33m^--- java.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(java.util.UUID/randomUUID)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.ClassCastException: java.lang.Long cannot be cast to clojure.lang.IPersistentVector
+ at clojure.lang.APersistentVector.compareTo (APersistentVector.java:430)
+    java.util.Collections.indexedBinarySearch (Collections.java:226)
+    java.util.Collections.binarySearch (Collections.java:213)
+    wongnai.core$eval32362.invokeStatic (core.clj:15)
+    wongnai.core$eval32362.invoke (core.clj:15)
+    clojure.lang.Compiler.eval (Compiler.java:6978)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28317.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28350.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28403.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28444.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9430$fn__9431.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9430.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Hello, Wongnai
+[36m----  Couldn't load Clojure file  src/wongnai/core.clj   line:15  column:1  ----[0m
+
+  [1mjava.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+
+  [33m15[0m  [1m(java.util.Collections/binarySearch (map-indexed vector (range 0 100 2)) 56)[0m
+  [0m  [0m  [33m^--- java.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(java.util.UUID/randomUUID)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.ClassCastException: java.lang.Long cannot be cast to clojure.lang.IPersistentVector
+ at clojure.lang.APersistentVector.compareTo (APersistentVector.java:430)
+    java.util.Collections.indexedBinarySearch (Collections.java:226)
+    java.util.Collections.binarySearch (Collections.java:213)
+    wongnai.core$eval32379.invokeStatic (core.clj:15)
+    wongnai.core$eval32379.invoke (core.clj:15)
+    clojure.lang.Compiler.eval (Compiler.java:6978)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28317.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28350.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28403.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28444.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9430$fn__9431.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9430.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Hello, Wongnai
+[36m----  Couldn't load Clojure file  src/wongnai/core.clj   line:15  column:1  ----[0m
+
+  [1mjava.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+
+  [33m15[0m  [1m(java.util.Collections/binarySearch (map-indexed vector (range 0 100 2)) 56)[0m
+  [0m  [0m  [33m^--- java.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(java.util.UUID/randomUUID)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.ClassCastException: java.lang.Long cannot be cast to clojure.lang.IPersistentVector
+ at clojure.lang.APersistentVector.compareTo (APersistentVector.java:430)
+    java.util.Collections.indexedBinarySearch (Collections.java:226)
+    java.util.Collections.binarySearch (Collections.java:213)
+    wongnai.core$eval32396.invokeStatic (core.clj:15)
+    wongnai.core$eval32396.invoke (core.clj:15)
+    clojure.lang.Compiler.eval (Compiler.java:6978)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28317.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28350.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28403.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28444.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9430$fn__9431.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9430.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Hello, Wongnai
+[36m----  Couldn't load Clojure file  src/wongnai/core.clj   line:15  column:1  ----[0m
+
+  [1mjava.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+
+  [33m15[0m  [1m(java.util.Collections/binarySearch (map-indexed vector (range 0 100 2)) 56)[0m
+  [0m  [0m  [33m^--- java.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(java.util.UUID/randomUUID)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.ClassCastException: java.lang.Long cannot be cast to clojure.lang.IPersistentVector
+ at clojure.lang.APersistentVector.compareTo (APersistentVector.java:430)
+    java.util.Collections.indexedBinarySearch (Collections.java:226)
+    java.util.Collections.binarySearch (Collections.java:213)
+    wongnai.core$eval32413.invokeStatic (core.clj:15)
+    wongnai.core$eval32413.invoke (core.clj:15)
+    clojure.lang.Compiler.eval (Compiler.java:6978)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28317.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28350.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28403.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28444.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9430$fn__9431.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9430.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+Hello, Wongnai
+[36m----  Couldn't load Clojure file  src/wongnai/core.clj   line:15  column:1  ----[0m
+
+  [1mjava.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+
+  [33m15[0m  [1m(java.util.Collections/binarySearch (map-indexed vector (range 0 100 2)) 56)[0m
+  [0m  [0m  [33m^--- java.lang.Long cannot be cast to clojure.lang.IPersistentVector[0m
+  [36m16[0m  [36m[0m
+  [36m17[0m  [36m(java.util.UUID/randomUUID)[0m
+
+[36m----  Exception Stack Trace  ----[0m
+
+java.lang.ClassCastException: java.lang.Long cannot be cast to clojure.lang.IPersistentVector
+ at clojure.lang.APersistentVector.compareTo (APersistentVector.java:430)
+    java.util.Collections.indexedBinarySearch (Collections.java:226)
+    java.util.Collections.binarySearch (Collections.java:213)
+    wongnai.core$eval32430.invokeStatic (core.clj:15)
+    wongnai.core$eval32430.invoke (core.clj:15)
+    clojure.lang.Compiler.eval (Compiler.java:6978)
+    clojure.lang.Compiler.load (Compiler.java:7430)
+    clojure.lang.Compiler.loadFile (Compiler.java:7368)
+    clojure.lang.RT$3.invoke (RT.java:322)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invokeStatic (clj_reloading.clj:61)
+    figwheel_sidecar.build_middleware.clj_reloading$handle_clj_source_reloading.invoke (clj_reloading.clj:46)
+    figwheel_sidecar.build_middleware.clj_reloading$hook$fn__28317.invoke (clj_reloading.clj:93)
+    figwheel_sidecar.build_middleware.javascript_reloading$hook$fn__28350.invoke (javascript_reloading.clj:48)
+    figwheel_sidecar.components.cljs_autobuild$color_output$fn__28403.invoke (cljs_autobuild.clj:79)
+    figwheel_sidecar.components.cljs_autobuild$execute_build$fn__28444.invoke (cljs_autobuild.clj:231)
+    figwheel_sidecar.utils$sync_exec$fn__9430$fn__9431.invoke (utils.clj:13)
+    figwheel_sidecar.utils$sync_exec$fn__9430.invoke (utils.clj:12)
+    clojure.core$binding_conveyor_fn$fn__6757.invoke (core.clj:2023)
+    clojure.lang.AFn.applyToHelper (AFn.java:154)
+    clojure.lang.RestFn.applyTo (RestFn.java:132)
+    clojure.lang.Agent$Action.doRun (Agent.java:114)
+    clojure.lang.Agent$Action.run (Agent.java:163)
+    java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1142)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:617)
+    java.lang.Thread.run (Thread.java:745)
+
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.516 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
+Notifying browser that CSS file changed: resources/public/css/style.css
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.457 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.342 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.412 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.286 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.503 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.478 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.305 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.29 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
+[0mCompiling "resources/public/js/compiled/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/js/compiled/main.js" in 0.3 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/wongnai/frontend.js
