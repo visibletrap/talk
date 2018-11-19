@@ -1,0 +1,13 @@
+- Huge win on JVM because slow startup time
+- Not the same as other console (explain why e.g. programs different (see stu scisors talk)
+- Explain basic clojure needed
+- Give on example (maybe amp's geo)
+- show test using transcriptor (but tell it works with other framework)
+- If have more time, use clojure spec's excercise to gen example
+
+
+- Most of the time works start with
+  - see what data you have
+  - read old code
+  - learn how to use library
+  - learn how to use framework
